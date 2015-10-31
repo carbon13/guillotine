@@ -36,4 +36,4 @@ find $(pwd) -type d | while read food_staffs; do
   slice
 done
 
-mv -f ./*.mobi ../Bookshelf
+find ~/Dropbox/Guillotine -name '*.mobi' | xargs -i mv {} ~/Bookshelf
